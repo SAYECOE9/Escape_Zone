@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #05080a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.game {
+  width: min(950px, 94vw);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 16px;
+  margin-bottom: 10px;
+
+  background: #0d1412;
+  border: 1px solid #1d3029;
+  border-radius: 12px;
+}
+
+.logo {
+  color: #00e5a0;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.stats {
+  display: flex;
+  gap: 18px;
+  color: #718078;
+  font-size: 11px;
+}
+
+.stats b {
+  color: #d9e7e0;
+}
+
+canvas {
+  width: 100%;
+  display: block;
+  border: 1px solid #1c3029;
+  border-radius: 14px;
+  background: #27362e;
+  box-shadow: 0 25px 80px #000b;
+}
+
+/* .help {
+    margin-top: 10px;
+    text-align: center;
+    color: #59665f;
+    font-size: 11px;
+  } */
+
+.mission {
+  margin-top: 10px;
+  padding: 10px 14px;
+
+  background: #0b1210;
+  border: 1px solid #192b25;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+
+  color: #68776f;
+  font-size: 11px;
+}
+
+.mission span {
+  transition: 0.2s;
+}
+
+.mission .done {
+  color: #00e5a0;
+}
+
+.screen {
+  position: fixed;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  background: #000b;
+  backdrop-filter: blur(6px);
+}
+
+.box {
+  width: min(390px, 90);
+  padding: 35px;
+
+  text-align: center;
+
+  background: #0b1210;
+  border: 1px solid #294239;
+  border-radius: 16px;
+
+  box-shadow: 0 30px 100px #000;
+}
+
+.box h1 {
+  color: #00e5a0;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.box p {
+  color: #7d8984;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+button {
+  border: 0;
+  padding: 12px 25px;
+
+  border-radius: 8px;
+
+  background: #00e5a0;
+  color: #03140e;
+
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #00e5a044;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .stats {
+    gap: 7px;
+  }
+
+  .mission {
+    gap: 8px;
+    font-size: 9px;
+  }
+
+  .logo {
+    font-size: 11px;
+  }
+}
